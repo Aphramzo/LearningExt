@@ -717,6 +717,7 @@ $include-extthemeneptune-resizer-splitter: true;
 $include-extthemeneptune-toolbar-paging: true;
 $include-extthemeneptune-toolbar-toolbar: true;
 $include-learningext-application: true;
+$include-learningext-model-anie: true;
 $include-learningext-view-main-main: true;
 $include-learningext-view-main-maincontroller: true;
 $include-learningext-view-main-mainmodel: true;

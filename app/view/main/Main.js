@@ -33,6 +33,7 @@ Ext.define('LearningExt.view.main.Main', {
             html: '<ul><li>This area is commonly used for navigation, for example, using a "tree" component.</li></ul>',
             width: 250,
             split: true,
+            collapsible: true,
             tbar: [{
                 text: 'Button',
                 handler: 'onClickButton'
@@ -41,10 +42,18 @@ Ext.define('LearningExt.view.main.Main', {
         {
             region: 'center',
             xtype: 'tabpanel',
-            items:[{
-                title: 'Tab 1',
-                html: '<h2>Content appropriate for the current navigation.</h2>'
-            }]
+            items:[
+                {
+                    title: 'Tab 1',
+                    html: '<h2>Content appropriate for the current navigation.</h2>'
+                },
+                {
+                    title: 'Anie',
+                    //reading about classes, but guessing this isnt the place to do this
+                    //where would be ideal to put anie var that could be used to generate the tab title as well?
+                    html: Ext.create('LearningExt.model.Anie').translate('It crash')
+                }
+            ]
         },
         {
             region: 'north',
