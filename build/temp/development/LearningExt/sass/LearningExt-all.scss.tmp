@@ -726,6 +726,8 @@ $include-learningext-view-main-mainmodel: true;
 @import '../../../../../ext/packages/ext-theme-neutral/sass/etc/all';
 /* including package ext-theme-neptune */
 @import '../../../../../ext/packages/ext-theme-neptune/sass/etc/all';
+/* including package LearningExt */
+@import '../../../../../sass/var/view/main/Main';
 /* including package ext-theme-neptune */
 @import '../../../../../ext/packages/ext-theme-neptune/sass/var/Component';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/var/LoadMask';
@@ -971,3 +973,7 @@ $relative-image-path-for-uis: $ext-theme-neptune-resource-path;
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/form/field/File';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/form/field/HtmlEditor';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/resizer/Resizer';
+/* including package LearningExt */
+$LearningExt-resource-path: 'images' !default;
+$relative-image-path-for-uis: $LearningExt-resource-path;
+@import '../../../../../sass/src/view/main/Main';

@@ -3618,3 +3618,9 @@
 .x-resizable-pinned .x-resizable-handle-southwest {
   background-position: 2px -2px;
 }
+
+/* including package LearningExt */
+/* line 1, ../../../../sass/src/view/main/Main.scss */
+.appHeader {
+  color: white;
+}

@@ -23,25 +23,36 @@ Ext.define('LearningExt.view.main.Main', {
         type: 'border'
     },
 
-    items: [{
-        xtype: 'panel',
-        bind: {
-            title: '{name}'
+    items: [
+        {
+            xtype: 'panel',
+            bind: {
+                title: '{name}'
+            },
+            region: 'west',
+            html: '<ul><li>This area is commonly used for navigation, for example, using a "tree" component.</li></ul>',
+            width: 250,
+            split: true,
+            tbar: [{
+                text: 'Button',
+                handler: 'onClickButton'
+            }]
         },
-        region: 'west',
-        html: '<ul><li>This area is commonly used for navigation, for example, using a "tree" component.</li></ul>',
-        width: 250,
-        split: true,
-        tbar: [{
-            text: 'Button',
-            handler: 'onClickButton'
-        }]
-    },{
-        region: 'center',
-        xtype: 'tabpanel',
-        items:[{
-            title: 'Tab 1',
-            html: '<h2>Content appropriate for the current navigation.</h2>'
-        }]
-    }]
+        {
+            region: 'center',
+            xtype: 'tabpanel',
+            items:[{
+                title: 'Tab 1',
+                html: '<h2>Content appropriate for the current navigation.</h2>'
+            }]
+        },
+        {
+            region: 'north',
+            xtype: 'component',
+            padding: 10, //really dislike not having px or em here...
+            height: 40,
+            html: 'The Anie Translator',
+            cls: 'appHeader' //assuming not class since its a reserved word? Just going to take a while to get used to and remember
+        }
+    ]
 });
